@@ -968,7 +968,7 @@ BEGIN
         MENUITEM "我在线上",                        ID_MENU_IMONLINE
         MENUITEM "离线",                          ID_MENU_IMOFFLINE
         MENUITEM SEPARATOR
-        MENUITEM "锁定 EdoyunIMClient ",                ID_MENU_LOCK
+        MENUITEM "锁定 EdoyunIMClient ",          ID_MENU_LOCK
         MENUITEM SEPARATOR
         MENUITEM "关闭所有声音",                      ID_MENU_MUTE
         MENUITEM SEPARATOR
@@ -1158,6 +1158,17 @@ END
 ID_ACCE_CHATDLG ACCELERATORS
 BEGIN
     VK_RETURN,      ID_BTN_SEND,            VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_LOGINDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
 END
 
 #endif    // 中文(简体，中国) resources

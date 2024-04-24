@@ -357,6 +357,7 @@
     <Image Include="res\100.ico" />
     <Image Include="res\BCF_Title16.ico" />
     <Image Include="res\BCF_Title32.ico" />
+    <Image Include="res\EdoyunIMClient.ico" />
     <Image Include="res\Group16.ico" />
     <Image Include="res\Group32.ico" />
     <Image Include="res\icon1.ico" />

@@ -2,8 +2,8 @@
 // Microsoft Visual C++ 生成的包含文件。
 // 供 EdoyunIMClient.rc 使用
 //
-#define EdoyunIMClient_MINOR_VERSION          0
-#define EdoyunIMClient_MAJOR_VERSION          1
+#define EdoyunIMClient_MINOR_VERSION    0
+#define EdoyunIMClient_MAJOR_VERSION    1
 #define IDD_ABOUTBOX                    100
 #define IDD_LOGINDLG                    101
 #define IDD_MAINDLG                     102
@@ -228,8 +228,8 @@
 #define ID_ADDCONFIRM_AGREE             1108
 #define ID_ADDCONFIRM_REFUSE            1109
 #define IDC_ADDCONFIRM                  1110
-#define IDC_ABOUT_EdoyunIMClient              1111
-#define IDC_ABOUT_EdoyunIMClient_BG           1112
+#define IDC_ABOUT_EdoyunIMClient        1111
+#define IDC_ABOUT_EdoyunIMClient_BG     1112
 #define IDC_STATIC_FILEPORT             1113
 #define IDC_STATIC_VERSION              1117
 #define IDC_BUTTON3                     1122
@@ -291,7 +291,7 @@
 #define IDC_RADIO_FINDTYPE2             1182
 #define IDC_TREE_MEMBERLIST             1183
 #define IDC_LIST_SELECTED               1184
-#define EdoyunIMClient_BUILD_VERSION          1526
+#define EdoyunIMClient_BUILD_VERSION    1526
 #define ID_32774                        32774
 #define ID_32780                        32780
 #define ID_32781                        32781

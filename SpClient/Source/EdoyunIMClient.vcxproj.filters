@@ -685,6 +685,9 @@
     <Image Include="res\Flamingo.ico">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="res\EdoyunIMClient.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <None Include="jsoncpp-0.5.0\json_internalarray.inl">
