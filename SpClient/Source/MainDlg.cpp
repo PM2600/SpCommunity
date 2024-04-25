@@ -907,7 +907,7 @@ void CMainDlg::ShowPanel(BOOL bShow)
 		m_SkinDlg.SetBgPic(_T("LoginPanel_window_windowBkg.png"), CRect(4, 65, 4, 4));
 
 		tstring strFileName = Edoyun::CPath::GetAppPath() + _T("Image\\Logining.png");
-		m_picLogining.SetBitmap(strFileName.c_str(), TRUE);
+		//m_picLogining.SetBitmap(strFileName.c_str(), TRUE);
 
 		m_staUTalkNum.SetWindowText(m_stAccountInfo.szUser);
 		m_staLogining.SetWindowText(_T("ÕýÔÚµÇÂ¼"));

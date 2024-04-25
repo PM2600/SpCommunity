@@ -152,47 +152,49 @@ BOOL CLoginSettingsDlg::InitUI()
 	strTemp.ReleaseBuffer();
 	m_edtFilePort.SetWindowText(strTemp);
 	
+	
+	//m_editProxyAddr.SetBgNormalPic(_T("frameBorderEffect_normalDraw.png"), CRect(2,2,2,2));
+	//m_editProxyAddr.SetBgHotPic(_T("frameBorderEffect_mouseDownDraw.png"), CRect(2,2,2,2));
+	//m_editProxyAddr.SubclassWindow(GetDlgItem(IDC_EDIT_PROADD));
+	//m_editProxyAddr.SetTransparent(TRUE, hDlgBgDC);
+	////m_editProxyAddr.MoveWindow(212, 180, 126, 30, TRUE);
+	//if(nSel > USE_BROWSER_PROXY)
+	//{
+	//	iniFile.ReadString(_T("server"), _T("proxyServer"), _T(""), strTemp.GetBuffer(32), 32, strIniPath);
+	//	strTemp.ReleaseBuffer();
+	//	m_editProxyAddr.SetWindowText(strTemp);
+	//}
 
-	m_editProxyAddr.SetBgNormalPic(_T("frameBorderEffect_normalDraw.png"), CRect(2,2,2,2));
-	m_editProxyAddr.SetBgHotPic(_T("frameBorderEffect_mouseDownDraw.png"), CRect(2,2,2,2));
-	m_editProxyAddr.SubclassWindow(GetDlgItem(IDC_EDIT_PROADD));
-	m_editProxyAddr.SetTransparent(TRUE, hDlgBgDC);
-	//m_editProxyAddr.MoveWindow(212, 180, 126, 30, TRUE);
-	if(nSel > USE_BROWSER_PROXY)
-	{
-		iniFile.ReadString(_T("server"), _T("proxyServer"), _T(""), strTemp.GetBuffer(32), 32, strIniPath);
-		strTemp.ReleaseBuffer();
-		m_editProxyAddr.SetWindowText(strTemp);
-	}
+	//m_edtProxyPort.SetBgNormalPic(_T("frameBorderEffect_normalDraw.png"), CRect(2,2,2,2));
+	//m_edtProxyPort.SetBgHotPic(_T("frameBorderEffect_mouseDownDraw.png"), CRect(2,2,2,2));
+	//m_edtProxyPort.SubclassWindow(GetDlgItem(IDC_EDIT_PROPORT));
+	//
 
-	m_edtProxyPort.SetBgNormalPic(_T("frameBorderEffect_normalDraw.png"), CRect(2,2,2,2));
-	m_edtProxyPort.SetBgHotPic(_T("frameBorderEffect_mouseDownDraw.png"), CRect(2,2,2,2));
-	m_edtProxyPort.SubclassWindow(GetDlgItem(IDC_EDIT_PROPORT));
-	//m_edtProxyPort.MoveWindow(368, 180, 127, 30, TRUE);
-	if(nSel > USE_BROWSER_PROXY)
-	{
-		iniFile.ReadString(_T("server"), _T("proxyPort"), _T(""), strTemp.GetBuffer(32), 32, strIniPath);
-		strTemp.ReleaseBuffer();
-		m_edtProxyPort.SetWindowText(strTemp);
-	}
+	////m_edtProxyPort.MoveWindow(368, 180, 127, 30, TRUE);
+	//if(nSel > USE_BROWSER_PROXY)
+	//{
+	//	iniFile.ReadString(_T("server"), _T("proxyPort"), _T(""), strTemp.GetBuffer(32), 32, strIniPath);
+	//	strTemp.ReleaseBuffer();
+	//	m_edtProxyPort.SetWindowText(strTemp);
+	//}
 
-	m_btnOK.SetButtonType(SKIN_PUSH_BUTTON);
-	m_btnOK.SetTransparent(TRUE, hDlgBgDC);
-	m_btnOK.SetBgPic(_T("Button\\btn_normal.png"), _T("Button\\btn_highlight.png"), _T("Button\\btn_down.png"), _T("Button\\btn_focus.png"));
-	m_btnOK.SetRound(4, 4);
-	m_btnOK.SubclassWindow(GetDlgItem(ID_LOGINSETTING));
-	//m_btnOK.MoveWindow(165, 265, 94, 30, TRUE);
+	//m_btnOK.SetButtonType(SKIN_PUSH_BUTTON);
+	//m_btnOK.SetTransparent(TRUE, hDlgBgDC);
+	//m_btnOK.SetBgPic(_T("Button\\btn_normal.png"), _T("Button\\btn_highlight.png"), _T("Button\\btn_down.png"), _T("Button\\btn_focus.png"));
+	//m_btnOK.SetRound(4, 4);
+	//m_btnOK.SubclassWindow(GetDlgItem(ID_LOGINSETTING));
+	////m_btnOK.MoveWindow(165, 265, 94, 30, TRUE);
 
-	m_btnCancel.SetButtonType(SKIN_PUSH_BUTTON);
-	m_btnCancel.SetTransparent(TRUE, hDlgBgDC);
-	m_btnCancel.SetBgPic(_T("Button\\btn_normal.png"), _T("Button\\btn_highlight.png"), _T("Button\\btn_down.png"), _T("Button\\btn_focus.png"));
-	m_btnCancel.SetRound(4, 4);
-	m_btnCancel.SubclassWindow(GetDlgItem(ID_LOGINSETTINGCANCEL));
-	//m_btnCancel.MoveWindow(290, 265, 94, 30, TRUE);
+	//m_btnCancel.SetButtonType(SKIN_PUSH_BUTTON);
+	//m_btnCancel.SetTransparent(TRUE, hDlgBgDC);
+	//m_btnCancel.SetBgPic(_T("Button\\btn_normal.png"), _T("Button\\btn_highlight.png"), _T("Button\\btn_down.png"), _T("Button\\btn_focus.png"));
+	//m_btnCancel.SetRound(4, 4);
+	//m_btnCancel.SubclassWindow(GetDlgItem(ID_LOGINSETTINGCANCEL));
+	////m_btnCancel.MoveWindow(290, 265, 94, 30, TRUE);
 
-	BOOL bEnabled = (m_comboProxyType.GetCurSel() > USE_BROWSER_PROXY ? TRUE : FALSE);
-	m_editProxyAddr.EnableWindow(bEnabled);
-	m_edtProxyPort.EnableWindow(bEnabled);
+	//BOOL bEnabled = (m_comboProxyType.GetCurSel() > USE_BROWSER_PROXY ? TRUE : FALSE);
+	//m_editProxyAddr.EnableWindow(bEnabled);
+	//m_edtProxyPort.EnableWindow(bEnabled);
 
 	return TRUE;
 }
